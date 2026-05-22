@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  /* Override default slate to our Graphite/Black palette */
+  --color-slate-950: #0a0a0a;
+  /* Black background base */
+  --color-slate-900: #1a1a1a;
+  /* Graphite panel base */
+  --color-slate-800: #2a2a2a;
+  /* Borders and lighter graphite */
+
+  /* Update Amber to our Gold/Brown accents */
+  --color-amber-500: #c5a059;
+  /* Classic gold */
+  --color-amber-400: #e3bc73;
+  /* Lighter gold for hovers */
+  --color-amber-600: #8b5e34;
+  /* Brown/Bronze for shadows/darker accents */
+
+  /* Fonts */
+  --font-sans: "Manrope", sans-serif;
+  --font-serif: "Druk Wide Cyr", "Druk Wide", "Arial Black", sans-serif;
+}
+
+@layer base {
+
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  body {
+    @apply bg-slate-950 text-slate-300;
+  }
+}
+
+/* Custom Utilities for Pro Max Glassmorphism */
+@layer utilities {
+  .glass-panel {
+    @apply bg-slate-900/60 backdrop-blur-md border border-slate-800 shadow-xl;
+  }
+
+  .glass-panel-hover {
+    @apply hover:bg-slate-900/90 hover:border-amber-500/40 transition-all duration-300;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-950;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-800 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-amber-500/50;
+}
+
+/* Druk wide specifically looks best uppercase */
+.font-serif {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  /* Druk is very wide, tight tracking helps */
+}
+
+/* Let's define the font-face locally if the user is going to drop the fonts, ensuring it works.
+   We'll use a placeholder URL for demonstration. */
+@font-face {
+  font-family: 'Druk Wide Cyr';
+  src: local('Druk Wide Cyr'), local('DrukWideCyr-Medium');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
