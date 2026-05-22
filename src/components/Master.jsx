@@ -66,7 +66,7 @@ export default function Master() {
                         </div>
 
                         <motion.a
-                            href="https://gev.clients.site"
+                            href="https://yandex.ru/maps/org/gev/115428588435/?booking%5Bpage%5D=menu&booking%5Bpermalink%5D=115428588435&ll=39.720798%2C47.271122&utm_source=share&z=16"
                             target="_blank"
                             rel="noopener noreferrer"
                             initial={{ opacity: 0, y: 20 }}

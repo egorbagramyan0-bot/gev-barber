@@ -2,9 +2,22 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const masters = [
-    { id: 1, name: 'Геворг', role: 'Арт-директор / Старший барбер', exp: 'Опыт 8 лет', imgUrl: 'https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=2692&auto=format&fit=crop' },
-    { id: 2, name: 'Давид', role: 'Топ-барбер', exp: 'Опыт 5 лет', imgUrl: 'https://images.unsplash.com/photo-1618306079930-fcc6bc1e1f7a?q=80&w=2574&auto=format&fit=crop' },
-    { id: 3, name: 'Артем', role: 'Барбер', exp: 'Опыт 3 года', imgUrl: 'https://images.unsplash.com/photo-1582233479966-246eb8fee024?q=80&w=2670&auto=format&fit=crop' },
+    {
+        id: 1,
+        name: 'Геворг',
+        role: 'Арт-директор / Старший барбер',
+        exp: 'Опыт 8 лет',
+        imgUrl: 'https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=2692&auto=format&fit=crop',
+        bookLink: 'https://yandex.ru/maps/org/gev/115428588435/?booking%5Bpage%5D=services&booking%5Bpermalink%5D=115428588435&booking%5BresourceId%5D=4376901&ll=39.720798%2C47.271122&utm_source=share&z=16'
+    },
+    {
+        id: 2,
+        name: 'Илья',
+        role: 'Топ-барбер',
+        exp: 'Опыт 5 лет',
+        imgUrl: 'https://images.unsplash.com/photo-1618306079930-fcc6bc1e1f7a?q=80&w=2574&auto=format&fit=crop',
+        bookLink: 'https://yandex.ru/maps/org/gev/115428588435/?booking%5Bpage%5D=services&booking%5Bpermalink%5D=115428588435&booking%5BresourceId%5D=4440797&ll=39.720798%2C47.271122&utm_source=share&z=16'
+    },
 ];
 
 const Masters = () => {
@@ -26,7 +39,7 @@ const Masters = () => {
                     </motion.div>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+                <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-4xl mx-auto">
                     {masters.map((master, index) => (
                         <motion.div
                             key={master.id}
@@ -58,7 +71,9 @@ const Masters = () => {
 
                             <div className="flex gap-3">
                                 <a
-                                    href="#book"
+                                    href={master.bookLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="flex-1 bg-slate-800 hover:bg-amber-500 text-slate-100 hover:text-slate-950 text-center py-3 rounded font-medium transition-colors duration-300"
                                 >
                                     К мастеру

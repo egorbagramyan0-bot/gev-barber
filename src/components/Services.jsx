@@ -68,7 +68,7 @@ const Services = () => {
                                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                                     {service.time}
                                 </span>
-                                <a href="#book" className="text-amber-500 text-sm font-medium hover:text-amber-400 flex items-center gap-1 transition-colors">
+                                <a href="https://yandex.ru/maps/org/gev/115428588435/?booking%5Bpage%5D=menu&booking%5Bpermalink%5D=115428588435&ll=39.720798%2C47.271122&utm_source=share&z=16" target="_blank" rel="noopener noreferrer" className="text-amber-500 text-sm font-medium hover:text-amber-400 flex items-center gap-1 transition-colors">
                                     Записаться <svg className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                                 </a>
                             </div>

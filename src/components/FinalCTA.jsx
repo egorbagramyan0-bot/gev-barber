@@ -36,7 +36,7 @@ export default function FinalCTA() {
                     className="mt-10"
                 >
                     <a
-                        href="https://gev.clients.site"
+                        href="https://yandex.ru/maps/org/gev/115428588435/?booking%5Bpage%5D=menu&booking%5Bpermalink%5D=115428588435&ll=39.720798%2C47.271122&utm_source=share&z=16"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center bg-bronze hover:bg-bronze-light text-bg font-display font-800 text-lg md:text-xl px-12 py-5 rounded-2xl transition-all duration-300 hover:shadow-[0_8px_40px_rgba(201,169,110,0.3)] hover:-translate-y-1 w-full sm:w-auto"

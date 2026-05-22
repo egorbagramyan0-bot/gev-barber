@@ -76,7 +76,9 @@ const Navbar = () => {
                     <div className="w-[1px] h-10 bg-[#d5af63]/20 hidden xl:block"></div>
 
                     <a
-                        href="#book"
+                        href="https://yandex.ru/maps/org/gev/115428588435/?booking%5Bpage%5D=menu&booking%5Bpermalink%5D=115428588435&ll=39.720798%2C47.271122&utm_source=share&z=16"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="bg-gradient-to-br from-[#D5AF63] via-[#F0D28A] to-[#B88935] text-[#050505] px-[30px] xl:px-[36px] h-[48px] xl:h-[54px] rounded-[10px] xl:rounded-[14px] text-[15px] xl:text-[16px] font-bold tracking-[0.03em] flex items-center justify-center shadow-[0_8px_28px_rgba(213,175,99,0.22)] hover:shadow-[0_12px_36px_rgba(213,175,99,0.4)] transition-all duration-300 transform hover:-translate-y-[2px]"
                     >
                         Записаться
@@ -123,7 +125,9 @@ const Navbar = () => {
                         </a>
                     ))}
                     <a
-                        href="#book"
+                        href="https://yandex.ru/maps/org/gev/115428588435/?booking%5Bpage%5D=menu&booking%5Bpermalink%5D=115428588435&ll=39.720798%2C47.271122&utm_source=share&z=16"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         onClick={() => setIsOpen(false)}
                         className="w-full text-center mt-4 bg-gradient-to-br from-[#D5AF63] via-[#F0D28A] to-[#B88935] text-[#050505] h-[54px] rounded-[16px] font-bold text-[16px] tracking-[0.04em] flex items-center justify-center shadow-[0_8px_28px_rgba(213,175,99,0.22)] transition-transform active:scale-[0.98] uppercase"
                     >

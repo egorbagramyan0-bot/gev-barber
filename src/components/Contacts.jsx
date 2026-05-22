@@ -69,7 +69,7 @@ export default function Contacts() {
                                 Написать в WhatsApp
                             </a>
                             <a
-                                href="https://gev.clients.site"
+                                href="https://yandex.ru/maps/org/gev/115428588435/?booking%5Bpage%5D=menu&booking%5Bpermalink%5D=115428588435&ll=39.720798%2C47.271122&utm_source=share&z=16"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex-1 text-center bg-bronze hover:bg-bronze-light text-bg font-display font-700 text-base px-6 py-4 rounded-xl transition-colors duration-300"

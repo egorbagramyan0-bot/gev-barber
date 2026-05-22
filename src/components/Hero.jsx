@@ -47,8 +47,9 @@ const Hero = () => {
                     </motion.a>
 
                     {/* Headline */}
-                    <h1 className="font-serif text-[clamp(42px,12vw,80px)] text-slate-100 leading-[1.05] mb-4 md:mb-6 uppercase mt-2">
-                        BARBERSHOP <br />
+                    <h1 className="font-serif text-[clamp(40px,11vw,80px)] text-slate-100 leading-[1.05] mb-4 md:mb-6 uppercase mt-2 max-w-full">
+                        <span className="sm:hidden">BARBER<br />SHOP<br /></span>
+                        <span className="hidden sm:inline">BARBERSHOP <br /></span>
                         <span className="text-[#d5af63]">GEV</span>
                     </h1>
 
@@ -56,21 +57,23 @@ const Hero = () => {
                         на <span className="text-slate-100 border-b-[2px] border-[#d5af63]/50 pb-1">Фурмановской</span>
                     </div>
 
-                    <div className="mb-10 md:mb-12 inline-flex bg-[#d5af63]/10 border border-[#d5af63]/30 px-5 py-3 rounded-xl text-[#d5af63] font-bold tracking-[0.03em] uppercase text-[clamp(13px,3.5vw,18px)] shadow-lg backdrop-blur-sm">
+                    <div className="mb-10 md:mb-12 inline-flex bg-[#d5af63]/10 border border-[#d5af63]/30 px-5 py-3 rounded-xl text-[#d5af63] font-bold tracking-[0.03em] uppercase text-[clamp(13px,3.5vw,18px)] shadow-lg backdrop-blur-sm text-center">
                         Мужская стрижка — 1600 ₽
                     </div>
 
                     {/* Buttons */}
-                    <div className="flex flex-col sm:flex-row gap-4 items-center w-full sm:w-auto">
+                    <div className="flex flex-col sm:flex-row gap-3 md:gap-4 items-center w-full sm:w-auto">
                         <a
-                            href="#book"
-                            className="w-full sm:w-auto bg-gradient-to-br from-[#D5AF63] via-[#F0D28A] to-[#B88935] text-[#050505] px-10 py-5 sm:py-4 rounded-[16px] font-bold tracking-[0.04em] uppercase transition-all duration-300 text-center text-[15px] md:text-base shadow-[0_8px_24px_rgba(213,175,99,0.25)] hover:shadow-[0_12px_36px_rgba(213,175,99,0.4)]"
+                            href="https://yandex.ru/maps/org/gev/115428588435/?booking%5Bpage%5D=menu&booking%5Bpermalink%5D=115428588435&ll=39.720798%2C47.271122&utm_source=share&z=16"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full sm:w-auto bg-gradient-to-br from-[#D5AF63] via-[#F0D28A] to-[#B88935] text-[#050505] px-10 py-4 lg:py-5 rounded-[16px] font-bold tracking-[0.04em] uppercase transition-all duration-300 text-center text-[15px] md:text-base shadow-[0_8px_24px_rgba(213,175,99,0.25)] hover:shadow-[0_12px_36px_rgba(213,175,99,0.4)]"
                         >
                             Записаться онлайн
                         </a>
                         <a
                             href="#services"
-                            className="hidden sm:block w-full sm:w-auto bg-transparent border border-[#d5af63]/50 hover:border-[#d5af63] text-slate-200 hover:text-[#d5af63] px-10 py-4 rounded-[16px] font-medium tracking-[0.05em] uppercase transition-all duration-300 text-center text-[15px] md:text-base backdrop-blur-sm"
+                            className="block w-full sm:w-auto bg-[#141414]/90 sm:bg-transparent border border-[#d5af63]/50 hover:border-[#d5af63] text-slate-200 hover:text-[#d5af63] px-10 py-4 lg:py-5 rounded-[16px] font-medium tracking-[0.05em] uppercase transition-all duration-300 text-center text-[15px] md:text-base backdrop-blur-sm"
                         >
                             Услуги и цены
                         </a>
