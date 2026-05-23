@@ -39,18 +39,41 @@ const Services = () => {
                     </motion.p>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {servicesList.map((service, index) => (
+                <motion.div
+                    className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.15 }}
+                    variants={{
+                        hidden: {},
+                        visible: {
+                            transition: {
+                                staggerChildren: 0.05
+                            }
+                        }
+                    }}
+                >
+                    {servicesList.map((service) => (
                         <motion.div
                             key={service.id}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="glass-panel glass-panel-hover p-5 md:p-8 rounded-xl flex flex-col group relative overflow-hidden"
+                            variants={{
+                                hidden: { opacity: 0, y: 18 },
+                                visible: {
+                                    opacity: 1,
+                                    y: 0,
+                                    transition: { duration: 0.4, ease: "easeOut" }
+                                }
+                            }}
+                            className="bg-[#141414] md:bg-slate-900/60 md:backdrop-blur-md border border-slate-800 lg:hover:bg-slate-900/90 lg:hover:border-amber-500/40 transition-colors duration-300 p-5 md:p-8 rounded-xl flex flex-col group relative overflow-hidden"
+                            style={{
+                                willChange: 'transform, opacity',
+                                WebkitBackfaceVisibility: 'hidden',
+                                backfaceVisibility: 'hidden',
+                                transform: 'translateZ(0)'
+                            }}
                         >
                             {/* Abstract decorative number matching UI UX Pro Max 'elegant luxury' */}
-                            <span className="absolute -top-4 -right-4 text-7xl font-serif text-slate-800/20 group-hover:text-amber-500/10 transition-colors font-bold">
+                            <span className="absolute -top-4 -right-4 text-7xl font-serif text-slate-800/20 lg:group-hover:text-amber-500/10 transition-colors font-bold">
                                 {service.id}
                             </span>
 
@@ -74,7 +97,7 @@ const Services = () => {
                             </div>
                         </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </div>
         </section>
     );
