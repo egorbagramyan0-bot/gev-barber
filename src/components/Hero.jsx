@@ -10,7 +10,7 @@ const Hero = () => {
             <div className="absolute inset-0 bg-[url('/hero.png')] bg-cover bg-center lg:bg-center grayscale z-0 opacity-40 sm:opacity-80" />
 
             {/* Mobile dark overlay to guarantee text readability */}
-            <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/90 via-[#050505]/60 to-[#050505]/90 sm:hidden z-[1]" />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/75 via-[#050505]/40 to-[#050505]/75 sm:hidden z-[1]" />
 
             {/* Z-INDEX 2: Main Content */}
             <div className="w-full max-w-[1440px] mx-auto px-6 md:px-8 lg:px-12 z-[2] relative">
