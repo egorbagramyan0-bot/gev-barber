@@ -7,7 +7,7 @@ const masters = [
         name: 'Геворг',
         role: 'Арт-директор / Старший барбер',
         exp: 'Опыт 8 лет',
-        imgUrl: 'https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=2692&auto=format&fit=crop',
+        imgUrl: '/master gev.png',
         bookLink: 'https://yandex.ru/maps/org/gev/115428588435/?booking%5Bpage%5D=services&booking%5Bpermalink%5D=115428588435&booking%5BresourceId%5D=4376901&ll=39.720798%2C47.271122&utm_source=share&z=16'
     },
     {
@@ -15,7 +15,7 @@ const masters = [
         name: 'Илья',
         role: 'Топ-барбер',
         exp: 'Опыт 5 лет',
-        imgUrl: 'https://images.unsplash.com/photo-1618306079930-fcc6bc1e1f7a?q=80&w=2574&auto=format&fit=crop',
+        imgUrl: '/master ilya.png',
         bookLink: 'https://yandex.ru/maps/org/gev/115428588435/?booking%5Bpage%5D=services&booking%5Bpermalink%5D=115428588435&booking%5BresourceId%5D=4440797&ll=39.720798%2C47.271122&utm_source=share&z=16'
     },
 ];

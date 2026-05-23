@@ -15,9 +15,21 @@ const Navbar = () => {
 
     const navLinks = [
         { name: 'Услуги', href: '#services' },
+        { name: 'Цены', href: '#services' },
         { name: 'Мастера', href: '#masters' },
-        { name: 'Контакты', href: '#contacts' },
+        { name: 'Отзывы', href: '#reviews' },
+        { name: 'Адрес', href: '#contacts' },
     ];
+
+    const handleLinkClick = (e, href) => {
+        e.preventDefault();
+        setIsOpen(false);
+        const targetId = href.replace('#', '');
+        const element = document.getElementById(targetId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     return (
         <motion.header
@@ -48,6 +60,7 @@ const Navbar = () => {
                         <a
                             key={link.name}
                             href={link.href}
+                            onClick={(e) => handleLinkClick(e, link.href)}
                             className="relative group text-[rgba(255,255,255,0.78)] hover:text-[#D5AF63] transition-colors duration-300 font-semibold text-[15px] xl:text-[16px] tracking-[0.04em] uppercase py-2"
                         >
                             {link.name}
@@ -108,17 +121,11 @@ const Navbar = () => {
                     animate={{ opacity: 1, y: 0 }}
                     className="lg:hidden absolute top-full left-0 w-full max-h-[calc(100vh-72px)] overflow-y-auto bg-[#050505]/98 backdrop-blur-[20px] p-6 flex flex-col gap-3 border-t border-[#d4af69]/15 shadow-2xl"
                 >
-                    {[
-                        { name: 'Услуги', href: '#services' },
-                        { name: 'Цены', href: '#services' },
-                        { name: 'Атмосфера', href: '#masters' },
-                        { name: 'Отзывы', href: '#reviews' },
-                        { name: 'Адрес', href: '#contacts' }
-                    ].map((link) => (
+                    {navLinks.map((link) => (
                         <a
                             key={link.name}
                             href={link.href}
-                            onClick={() => setIsOpen(false)}
+                            onClick={(e) => handleLinkClick(e, link.href)}
                             className="text-center text-slate-200 hover:text-[#D5AF63] transition-colors duration-300 font-semibold text-[16px] md:text-[18px] tracking-[0.05em] uppercase py-4 border-b border-white/5 block"
                         >
                             {link.name}
