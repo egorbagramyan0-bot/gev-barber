@@ -14,8 +14,7 @@ const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { name: 'Услуги', href: '#services' },
-        { name: 'Цены', href: '#services' },
+        { name: 'Услуги & Цены', href: '#services' },
         { name: 'Мастера', href: '#masters' },
         { name: 'Отзывы', href: '#reviews' },
         { name: 'Адрес', href: '#contacts' },
