@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Services from './components/Services';
 import Masters from './components/Masters';
 import Reviews from './components/Reviews';
 import Contacts from './components/Contacts';

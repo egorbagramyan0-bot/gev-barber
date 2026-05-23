@@ -29,15 +29,15 @@ const Hero = () => {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="group inline-flex flex-col mb-8 bg-[#141414]/65 backdrop-blur-md border border-[#c9a46a]/30 rounded-[20px] px-5 py-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(201,164,106,0.15)] hover:border-[#c9a46a]/50"
+                        className="group inline-flex flex-col mb-8 bg-[#141414]/65 backdrop-blur-md border border-[#C4A15A]/30 rounded-[20px] px-5 py-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(196,161,90,0.15)] hover:border-[#C4A15A]/50"
                     >
                         <div className="flex items-center gap-2 mb-1">
                             {/* SVG Star for consistent golden coloring */}
-                            <svg className="w-[18px] h-[18px] text-[#F0D28A] shrink-0 drop-shadow-[0_0_4px_rgba(240,210,138,0.4)]" fill="currentColor" viewBox="0 0 20 20">
+                            <svg className="w-[18px] h-[18px] text-[#C4A15A] shrink-0 drop-shadow-[0_0_4px_rgba(196,161,90,0.4)]" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
                             <div className="flex items-baseline gap-1.5">
-                                <span className="text-[#F0D28A] font-bold text-[19px] leading-none">5.0</span>
+                                <span className="text-[#C4A15A] font-bold text-[19px] leading-none">5.0</span>
                                 <span className="text-slate-300 text-[15px] font-medium leading-none">в Яндекс Картах</span>
                             </div>
                         </div>
@@ -50,14 +50,14 @@ const Hero = () => {
                     <h1 className="font-serif text-[clamp(40px,11vw,80px)] text-slate-100 leading-[1.05] mb-4 md:mb-6 uppercase mt-2 max-w-full">
                         <span className="sm:hidden">BARBER<br />SHOP<br /></span>
                         <span className="hidden sm:inline">BARBERSHOP <br /></span>
-                        <span className="text-[#d5af63]">GEV</span>
+                        <span className="text-[#C4A15A]">GEV</span>
                     </h1>
 
                     <div className="text-slate-300 font-medium tracking-wide text-[clamp(18px,5vw,28px)] mb-6 md:mb-10">
-                        на <span className="text-slate-100 border-b-[2px] border-[#d5af63]/50 pb-1">Фурмановской</span>
+                        на <span className="text-slate-100 border-b-[2px] border-[#C4A15A]/50 pb-1">Фурмановской</span>
                     </div>
 
-                    <div className="mb-10 md:mb-12 inline-flex bg-[#d5af63]/10 border border-[#d5af63]/30 px-5 py-3 rounded-xl text-[#d5af63] font-bold tracking-[0.03em] uppercase text-[clamp(13px,3.5vw,18px)] shadow-lg backdrop-blur-sm text-center">
+                    <div className="mb-10 md:mb-12 inline-flex bg-[#C4A15A]/10 border border-[#C4A15A]/30 px-5 py-3 rounded-xl text-[#C4A15A] font-bold tracking-[0.03em] uppercase text-[clamp(13px,3.5vw,18px)] shadow-lg backdrop-blur-sm text-center">
                         Мужская стрижка — 1600 ₽
                     </div>
 
@@ -67,13 +67,13 @@ const Hero = () => {
                             href="https://yandex.ru/maps/org/gev/115428588435/?booking%5Bpage%5D=menu&booking%5Bpermalink%5D=115428588435&ll=39.720798%2C47.271122&utm_source=share&z=16"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="w-full sm:w-auto bg-gradient-to-br from-[#D5AF63] via-[#F0D28A] to-[#B88935] text-[#050505] px-10 py-4 lg:py-5 rounded-[16px] font-bold tracking-[0.04em] uppercase transition-all duration-300 text-center text-[15px] md:text-base shadow-[0_8px_24px_rgba(213,175,99,0.25)] hover:shadow-[0_12px_36px_rgba(213,175,99,0.4)]"
+                            className="w-full sm:w-auto bg-gradient-to-br from-[#A88445] via-[#C4A15A] to-[#7A5A2C] hover:from-[#D0AD65] hover:via-[#C4A15A] hover:to-[#8A6A32] text-[#0B0B0B] border border-[rgba(214,181,109,0.35)] px-10 py-4 lg:py-5 rounded-[16px] font-bold tracking-[0.04em] uppercase transition-all duration-300 text-center text-[15px] md:text-base shadow-[0_12px_30px_rgba(0,0,0,0.35),0_0_18px_rgba(196,161,90,0.12)] hover:shadow-[0_14px_35px_rgba(0,0,0,0.4),0_0_20px_rgba(196,161,90,0.2)] transform hover:-translate-y-[1px]"
                         >
                             Записаться онлайн
                         </a>
                         <a
                             href="#services"
-                            className="block w-full sm:w-auto bg-[#141414]/90 sm:bg-transparent border border-[#d5af63]/50 hover:border-[#d5af63] text-slate-200 hover:text-[#d5af63] px-10 py-4 lg:py-5 rounded-[16px] font-medium tracking-[0.05em] uppercase transition-all duration-300 text-center text-[15px] md:text-base backdrop-blur-sm"
+                            className="block w-full sm:w-auto bg-[#141414]/90 sm:bg-transparent border border-[#C4A15A]/50 hover:border-[#C4A15A] text-slate-200 hover:text-[#C4A15A] px-10 py-4 lg:py-5 rounded-[16px] font-medium tracking-[0.05em] uppercase transition-all duration-300 text-center text-[15px] md:text-base backdrop-blur-sm"
                         >
                             Услуги и цены
                         </a>
@@ -89,11 +89,11 @@ const Hero = () => {
                 className="absolute bottom-10 left-6 md:left-12 z-[2] hidden md:flex flex-col items-center gap-3"
             >
                 <span className="text-slate-400 text-xs tracking-widest uppercase rotate-90 mb-8">Вниз</span>
-                <div className="w-[1px] h-16 bg-[#d5af63]/30 overflow-hidden">
+                <div className="w-[1px] h-16 bg-[#C4A15A]/30 overflow-hidden">
                     <motion.div
                         animate={{ y: [0, 64] }}
                         transition={{ repeat: Infinity, duration: 1.5, ease: "linear" }}
-                        className="w-full h-1/2 bg-[#d5af63]"
+                        className="w-full h-1/2 bg-[#C4A15A]"
                     />
                 </div>
             </motion.div>
