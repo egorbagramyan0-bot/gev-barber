@@ -5,7 +5,7 @@ const masters = [
     {
         id: 1,
         name: 'Геворг',
-        role: 'Арт-директор / Старший барбер',
+        role: 'Учредитель / Топ-барбер',
         exp: 'Опыт 8 лет',
         imgUrl: '/master gev.png',
         bookLink: 'https://yandex.ru/maps/org/gev/115428588435/?booking%5Bpage%5D=services&booking%5Bpermalink%5D=115428588435&booking%5BresourceId%5D=4376901&ll=39.720798%2C47.271122&utm_source=share&z=16'
