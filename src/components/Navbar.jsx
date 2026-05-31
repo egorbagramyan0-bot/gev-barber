@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
@@ -35,7 +35,7 @@ const Navbar = () => {
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 w-full flex items-center h-[72px] md:h-[82px] lg:h-[96px] xl:h-[110px] ${scrolled
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 w-full flex items-center h-[48px] lg:h-[56px] ${scrolled
                 ? 'bg-[#050505]/80 backdrop-blur-[14px] border-b border-[#C4A15A]/15'
                 : 'bg-transparent border-b border-transparent'
                 }`}
@@ -46,9 +46,9 @@ const Navbar = () => {
                 <div className="flex-1 flex justify-start items-center h-full">
                     <a href="#" className="flex items-center bg-transparent p-0 m-0 cursor-pointer group">
                         <img
-                            src="/gev_logo_transparent_clean.png"
+                            src="/gev-logo-transparent.png"
                             alt="Barbershop GEV Logo"
-                            className="w-auto block object-contain bg-transparent p-0 m-0 h-[48px] md:h-[56px] lg:h-[64px] xl:h-[76px] transition-all duration-300 drop-shadow-md group-hover:drop-shadow-[0_0_12px_rgba(196,161,90,0.15)]"
+                            className="w-auto block object-contain bg-transparent p-0 m-0 h-[36px] lg:h-[44px] transition-all duration-300 drop-shadow-md group-hover:drop-shadow-[0_0_12px_rgba(196,161,90,0.15)]"
                         />
                     </a>
                 </div>
@@ -85,13 +85,13 @@ const Navbar = () => {
                     </a>
 
                     {/* Vertical Divider line */}
-                    <div className="w-[1px] h-10 bg-[#C4A15A]/20 hidden xl:block"></div>
+                    <div className="w-[1px] h-6 bg-[#C4A15A]/20 hidden xl:block"></div>
 
                     <a
                         href="https://yandex.ru/maps/org/gev/115428588435/?booking%5Bpage%5D=menu&booking%5Bpermalink%5D=115428588435&ll=39.720798%2C47.271122&utm_source=share&z=16"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-gradient-to-br from-[#A88445] via-[#C4A15A] to-[#7A5A2C] hover:from-[#D0AD65] hover:via-[#C4A15A] hover:to-[#8A6A32] text-[#0B0B0B] border border-[rgba(214,181,109,0.35)] px-[30px] xl:px-[36px] h-[48px] xl:h-[54px] rounded-[10px] xl:rounded-[14px] text-[15px] xl:text-[16px] font-bold tracking-[0.03em] flex items-center justify-center shadow-[0_12px_30px_rgba(0,0,0,0.35),0_0_18px_rgba(196,161,90,0.12)] hover:shadow-[0_14px_35px_rgba(0,0,0,0.4),0_0_20px_rgba(196,161,90,0.2)] transition-all duration-300 transform hover:-translate-y-[1px]"
+                        className="bg-gradient-to-br from-[#A88445] via-[#C4A15A] to-[#7A5A2C] hover:from-[#D0AD65] hover:via-[#C4A15A] hover:to-[#8A6A32] text-[#0B0B0B] border border-[rgba(214,181,109,0.35)] px-6 h-[38px] xl:h-[40px] rounded-[8px] text-[13px] xl:text-[14px] font-bold tracking-[0.03em] flex items-center justify-center shadow-[0_6px_20px_rgba(0,0,0,0.3),0_0_12px_rgba(196,161,90,0.1)] hover:shadow-[0_8px_25px_rgba(0,0,0,0.35),0_0_15px_rgba(196,161,90,0.15)] transition-all duration-300 transform hover:-translate-y-[1px]"
                     >
                         Записаться
                     </a>
@@ -118,8 +118,26 @@ const Navbar = () => {
                 <motion.div
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="lg:hidden absolute top-full left-0 w-full max-h-[calc(100vh-72px)] overflow-y-auto bg-[#050505]/98 backdrop-blur-[20px] p-6 flex flex-col gap-3 border-t border-[#C4A15A]/15 shadow-2xl"
+                    className="lg:hidden absolute top-full left-0 w-full max-h-[calc(100vh-48px)] overflow-y-auto bg-[#050505]/98 backdrop-blur-[20px] p-6 flex flex-col gap-3 border-t border-[#C4A15A]/15 shadow-2xl"
                 >
+                    {/* Centered logo inside mobile menu */}
+                    <div className="flex justify-center mb-4 pt-2">
+                        <a
+                            href="#"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                setIsOpen(false);
+                                window.scrollTo({ top: 0, behavior: 'smooth' });
+                            }}
+                            className="bg-transparent p-0 cursor-pointer group"
+                        >
+                            <img
+                                src="/gev-logo-transparent.png"
+                                alt="GEV Logo Icon"
+                                className="h-[44px] w-auto object-contain bg-transparent transition-all duration-300 drop-shadow-md group-hover:drop-shadow-[0_0_12px_rgba(196,161,90,0.15)]"
+                            />
+                        </a>
+                    </div>
                     {navLinks.map((link) => (
                         <a
                             key={link.name}
